@@ -5,68 +5,68 @@ import org.junit.Test;
 
 public class TestMaximum {
           
-		Integer x=10;
-           Integer y=50;
-           Integer z=100;
-           Float a =10.3f;
-           Float b = 50.00f;
-           Float c = 100.3f;
-           String m= "Apple";
-           String n="banana";
-           String p="Peach";
+		static Integer integer1=10;
+          static Integer integer2=50;
+          static Integer integer3=100;
+          static Float float1 =10.3f;
+          static Float float2= 50.00f;
+          static Float float3= 100.3f;
+          static String string1= "Apple";
+          static String string2="Peach";
+           static String string3="banana";
 	@Test
 	public void whenMaximumGivenAtFirstShouldReturnFirst(){
-		Maximum max = new Maximum();
-		Integer maximum = max.getMax(z,x,y);
-		Assert.assertEquals(z, maximum);
+		Maximum<Integer> max = new Maximum<Integer>(integer1,integer2,integer3);
+		Integer maximum = max.getMax(integer3,integer1,integer2);
+		Assert.assertEquals(integer3, maximum);
 	}
 	@Test
 	public void whenMaximumGivenAtSecondShouldReturnSecond(){
-		Maximum max = new Maximum();
-		Integer maximum = max.getMax(x,z,y);
-		Assert.assertEquals(z, maximum);
+		Maximum<Integer> max = new Maximum<Integer>(integer1,integer2,integer3);
+		Integer maximum = max.getMax(integer1,integer3,integer2);
+		Assert.assertEquals(integer3, maximum);
 	}
 	@Test
 	public void whenMaximumGivenAtThirdShouldReturnThird(){
-		Maximum max = new Maximum();
-		Integer maximum = max.getMax(x,y,z);
-		Assert.assertEquals(z, maximum);
+		Maximum<Integer> max = new Maximum<Integer>(integer1,integer2,integer3);
+		Integer maximum = max.getMax(integer1,integer2,integer3);
+		Assert.assertEquals(integer3, maximum);
 	}
 	@Test
 	public void whenMaximumAtFirstShouldReturnFirst(){
-		Maximum max = new Maximum();
-		Float maximum = max.getMax(c,a,b);
-		Assert.assertEquals(c, maximum);
+		Maximum<Float> max = new Maximum<Float>(float1,float2,float3);
+		Float maximum = max.getMax(float3,float1,float2);
+		Assert.assertEquals(float3, maximum);
 	}
 	@Test
 	public void whenMaximumAtSecondShouldReturnSecond(){
-		Maximum max = new Maximum();
-		Float maximum = max.getMax(a,c,b);
-		Assert.assertEquals(c, maximum);
+		Maximum<Float> max = new Maximum<Float>(float1,float2,float3);
+		Float maximum = max.getMax(float1,float3,float2);
+		Assert.assertEquals(float3, maximum);
 }
 	@Test
 	public void whenMaximumAtThirdShouldReturnThird(){
-		Maximum max = new Maximum();
-		Float maximum = max.getMax(a,b,c);
-		Assert.assertEquals(c, maximum);
+		Maximum<Float> max = new Maximum<Float>(float1,float2,float3);
+		Float maximum = max.getMax(float1,float2,float3);
+		Assert.assertEquals(float3, maximum);
 	}
 	@Test
 	public void whenMaximumStringAtFirstShouldReturnFirst(){
-		Maximum max = new Maximum();
-		String maximum = max.getMax(n,m,p);
-		Assert.assertEquals(n, maximum);
+		Maximum<String> max = new Maximum<String>(string1,string2,string3);
+		String maximum = max.getMax(string3,string1,string2);
+		Assert.assertEquals(string3, maximum);
 	}
 	@Test
 	public void whenMaximumStringAtSecondShouldReturnSecond(){
-		Maximum max = new Maximum();
-		String maximum = max.getMax(m,n,p);
-		Assert.assertEquals(n, maximum);
+		Maximum<String> max = new Maximum<String>(string1,string2,string3);
+		String maximum = max.getMax(string1,string3,string2);
+		Assert.assertEquals(string3, maximum);
 }
 	@Test
 	public void whenMaximumStringAtThirdShouldReturnThird(){
-		Maximum max = new Maximum();
-		String maximum = max.getMax(m,p,n);
-		Assert.assertEquals(n, maximum);
+		Maximum<String> max = new Maximum<String>(string1,string2,string3);
+		String maximum = max.getMax(string1,string2,string3);
+		Assert.assertEquals(string3, maximum);
 	}
 
 }

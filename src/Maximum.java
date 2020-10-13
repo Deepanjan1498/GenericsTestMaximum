@@ -1,7 +1,20 @@
 
-public class Maximum implements Comparable {
-
-	 public <K extends Comparable<K>> K getMax(K x,K y,K z)
+public class Maximum<K extends Comparable<K>> {
+	
+	    K x,y,z;
+	    
+	   
+	 public Maximum(K x, K y, K z) {
+			super();
+			this.x = x;
+			this.y = y;
+			this.z = z;
+		}
+	 public K getMaximum()
+	 {
+		 return Maximum.getMax(x,y,z);
+	 }
+	public static <K extends Comparable<K>> K getMax(K x,K y,K z)
 	    {
 	    	K max=x;
 	    	if(y.compareTo(max)>0)
@@ -10,12 +23,7 @@ public class Maximum implements Comparable {
 	    		max=z;
 	    	return max;
 	    }
-		@Override
-		public int compareTo(Object o) {
-			// TODO Auto-generated method stub
-			return 0;
-		}
-
+		
 }
 
 
