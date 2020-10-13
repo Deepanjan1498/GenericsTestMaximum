@@ -4,12 +4,16 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class TestMaximum {
-           Integer x=10;
+          
+		Integer x=10;
            Integer y=50;
            Integer z=100;
            Float a =10.3f;
            Float b = 50.00f;
            Float c = 100.3f;
+           String m= "Apple";
+           String n="banana";
+           String p="Peach";
 	@Test
 	public void whenMaximumGivenAtFirstShouldReturnFirst(){
 		Maximum max = new Maximum();
@@ -46,7 +50,27 @@ public class TestMaximum {
 		Float maximum = max.getMaxOfFloats(a,b,c);
 		Assert.assertEquals(c, maximum);
 	}
+	@Test
+	public void whenMaximumStringAtFirstShouldReturnFirst(){
+		Maximum max = new Maximum();
+		String maximum = max.getMaxOfStrings(n,m,p);
+		Assert.assertEquals(n, maximum);
+	}
+	@Test
+	public void whenMaximumStringAtSecondShouldReturnSecond(){
+		Maximum max = new Maximum();
+		String maximum = max.getMaxOfStrings(m,n,p);
+		Assert.assertEquals(n, maximum);
 }
+	@Test
+	public void whenMaximumStringAtThirdShouldReturnThird(){
+		Maximum max = new Maximum();
+		String maximum = max.getMaxOfStrings(m,p,n);
+		Assert.assertEquals(n, maximum);
+	}
+
+}
+
 
 	
 	

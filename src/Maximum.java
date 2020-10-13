@@ -26,6 +26,17 @@ public class Maximum implements Comparable {
 		return maximum;
 			
 	}
+	public String getMaxOfStrings(String x, String y, String z) {
+		String maximum=x;
+		if(y.compareTo(maximum)>0)
+			maximum=y;
+			if(z.compareTo(maximum)>0)
+				maximum=z;
+		return maximum;
+			
+	}
+
 }
+
 
 	
