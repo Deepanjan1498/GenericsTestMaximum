@@ -6,10 +6,8 @@ import org.junit.Test;
 public class TestMaximum {
           
 		static Integer[] arrayInteger= {10,20,50,80,100,500};
-        
-          static Float[] arrayFloat = {10.3f,20.0f,80.0f,100.0f};
-          
-          static String[] arrayString= {"Apple","Peach","Banana","Watermelon"};
+         static Float[] arrayFloat = {10.3f,20.0f,80.0f,100.0f};
+            static String[] arrayString= {"Apple","Peach","Banana","Watermelon"};
           
 	@Test
 	public void whenIntegerIsMaxShouldReturnIt(){
