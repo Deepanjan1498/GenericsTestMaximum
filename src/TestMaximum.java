@@ -17,55 +17,55 @@ public class TestMaximum {
 	@Test
 	public void whenMaximumGivenAtFirstShouldReturnFirst(){
 		Maximum max = new Maximum();
-		Integer maximum = max.getMaxOfIntegers(z,x,y);
+		Integer maximum = max.getMax(z,x,y);
 		Assert.assertEquals(z, maximum);
 	}
 	@Test
 	public void whenMaximumGivenAtSecondShouldReturnSecond(){
 		Maximum max = new Maximum();
-		Integer maximum = max.getMaxOfIntegers(x,z,y);
+		Integer maximum = max.getMax(x,z,y);
 		Assert.assertEquals(z, maximum);
 	}
 	@Test
 	public void whenMaximumGivenAtThirdShouldReturnThird(){
 		Maximum max = new Maximum();
-		Integer maximum = max.getMaxOfIntegers(x,y,z);
+		Integer maximum = max.getMax(x,y,z);
 		Assert.assertEquals(z, maximum);
 	}
 	@Test
 	public void whenMaximumAtFirstShouldReturnFirst(){
 		Maximum max = new Maximum();
-		Float maximum = max.getMaxOfFloats(c,a,b);
+		Float maximum = max.getMax(c,a,b);
 		Assert.assertEquals(c, maximum);
 	}
 	@Test
 	public void whenMaximumAtSecondShouldReturnSecond(){
 		Maximum max = new Maximum();
-		Float maximum = max.getMaxOfFloats(a,c,b);
+		Float maximum = max.getMax(a,c,b);
 		Assert.assertEquals(c, maximum);
 }
 	@Test
 	public void whenMaximumAtThirdShouldReturnThird(){
 		Maximum max = new Maximum();
-		Float maximum = max.getMaxOfFloats(a,b,c);
+		Float maximum = max.getMax(a,b,c);
 		Assert.assertEquals(c, maximum);
 	}
 	@Test
 	public void whenMaximumStringAtFirstShouldReturnFirst(){
 		Maximum max = new Maximum();
-		String maximum = max.getMaxOfStrings(n,m,p);
+		String maximum = max.getMax(n,m,p);
 		Assert.assertEquals(n, maximum);
 	}
 	@Test
 	public void whenMaximumStringAtSecondShouldReturnSecond(){
 		Maximum max = new Maximum();
-		String maximum = max.getMaxOfStrings(m,n,p);
+		String maximum = max.getMax(m,n,p);
 		Assert.assertEquals(n, maximum);
 }
 	@Test
 	public void whenMaximumStringAtThirdShouldReturnThird(){
 		Maximum max = new Maximum();
-		String maximum = max.getMaxOfStrings(m,p,n);
+		String maximum = max.getMax(m,p,n);
 		Assert.assertEquals(n, maximum);
 	}
 
