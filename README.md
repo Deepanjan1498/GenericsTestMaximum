@@ -1,2 +1,2 @@
 # GenericsTestMaximum
-Welcome to Generics Test Maximum Program of 3 variables.
+Welcome to Generics Test Maximum Program of three variables.
